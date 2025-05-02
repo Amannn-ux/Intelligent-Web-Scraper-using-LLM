@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Scraper with LLM</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Web Scraper with LLM Processing</h1>
+        <input type="text" id="urlInput" placeholder="Enter URL to scrape">
+        <button id="scrapeButton">Scrape</button>
+
+        <h3>Raw Content:</h3>
+        <pre id="rawContent"></pre>
+
+        <h3>Processed Content:</h3>
+        <pre id="processedContent"></pre>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
